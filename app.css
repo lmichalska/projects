@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  background-color: #A91D3A;
+  background-color: #1e453e;
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-left: 5vw;
@@ -40,7 +40,7 @@ nav a:hover {
 
 .bold {
   font-weight: 500;
-  color: #A91D3A;
+  color: #1e453e;
   padding: 0 0 10px 0;
   margin: 0;
 }
@@ -81,7 +81,7 @@ h1 {
 
 .list-item:hover {
   transform: scale(1.03);
-  box-shadow: 1px 1px 8px #eda93b;
+  box-shadow: 1px 1px 8px #2e9885;
 }
 
 .list-item img {
@@ -96,7 +96,7 @@ h1 {
   justify-content: center;
 }
 .button {
-  background-color: #A91D3A;
+  background-color: #1e453e;
   padding: 10px 15px 10px 15px;
   border-radius: 10px;
   border-width: 0;
