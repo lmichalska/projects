@@ -18,6 +18,10 @@ async function getProjects() {
   return data;
 }
 
+/* the navigation - all projects are automaically
+ added to the menu and linked to the project UI card */
+
+
 function displayProjects(projects) {
   const projectsList = document.querySelector("nav");
   for (const project of projects) {
@@ -31,6 +35,9 @@ function displayProjects(projects) {
     );
   }
 }
+
+
+/* projects */
 
 function displayProjectsList(projects) {
   const projectsList = document.querySelector("#projects");

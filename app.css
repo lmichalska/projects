@@ -17,6 +17,17 @@ body {
   padding-bottom: 3vw;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* navigation */
+
+
 nav {
   background-color: var(--green);
   padding-top: 2vh;
@@ -45,6 +56,10 @@ nav a:hover {
   font-weight: 700;
 }
 
+
+/* text */
+
+
 .bold {
   font-weight: 500;
   color: #1e453e;
@@ -57,16 +72,13 @@ nav a:hover {
   text-decoration: none;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   width: 53vw;
 }
+
+
+/* projects */
+
 
 .list {
   display: flex;
@@ -97,6 +109,11 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
 }
+
+
+/* buttons */
+
+
 #button {
   width: 100%;
   display: flex;
