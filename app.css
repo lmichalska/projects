@@ -32,8 +32,8 @@ nav {
   background-color: var(--green);
   padding-top: 2vh;
   padding-bottom: 2vh;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 17vw;
+  padding-right: 13vw;
   font-size: larger;
   display: flex;
   flex-direction:row-reverse;
