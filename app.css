@@ -3,5 +3,33 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #9bbdc5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.list-item {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  padding: 1.5em;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+  animation: fadeIn 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80vw;
+}
+
+.list-item:hover {
+  transform: scale(1.03);
+}
+
+.list-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
