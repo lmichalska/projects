@@ -42,11 +42,12 @@ function displayProjectsList(projects) {
     <article class="list-item" id="${project.acf.id}">
       <img src="${project.acf.image}" alt="${project.acf.name}" />
       <h2>${project.acf.name}</h2>
-      <p class="bold">${project.acf.type}</p>
-      <p class="bold">Duration: ${project.acf.duration}</p>
+      <p class="bold">${project.acf.type}</p>  
+      <p class="bold">Duration: ${project.acf.duration}</p>    
+      <p class="bold">Type: ${project.acf.people}</p>
       <p>${project.acf.short}</p>
       <div id="button">
-      <button class="button"><a href="${project.acf.link}">See the project</a></button> 
+      <button class="button"><a href="${project.acf.link}">View project</a></button> 
       </div>
     </article>
   `
