@@ -118,7 +118,9 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
+  font-size: larger;
 }
+
 .button {
   background-color: var(--green);
   padding: 10px 15px 10px 15px;
@@ -133,7 +135,7 @@ h1 {
 .button:hover{
   background-color: var(--yellow);
   color: #000000;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 17px 10px 17px;
   border-radius: 10px;
   border-width: 0;
 }
