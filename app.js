@@ -2,13 +2,12 @@
 
 window.addEventListener("load", initApp); // When the page is loaded, run initApp function
 
-
 async function initApp() {
   console.log("initApp: app.js is running 🎉"); // Log to the console that the app is running
   const projects = await getProjects();
   console.log(projects);
   displayProjects(projects);
-  displayProjectsGrid(projects);
+  displayProjectsList(projects);
 }
 
 async function getProjects() {
@@ -20,24 +19,35 @@ async function getProjects() {
 }
 
 function displayProjects(projects) {
-  const projectsList = document.querySelector("#projects-list");
+  const projectsList = document.querySelector("nav");
   for (const project of projects) {
-    projectsList.insertAdjacentHTML("beforeend", `<li>${project.acf.name}</li>`);
+    projectsList.insertAdjacentHTML(
+      "beforeend",
+      /*html*/ `
+    <article class="nav">
+      <a href="#${project.acf.id}"><p>${project.acf.name}</p></a>
+    </article>
+  `
+    );
   }
 }
 
-function displayProjectsGrid(projects) {
-  const projectsGrid = document.querySelector("#projects-grid");
+function displayProjectsList(projects) {
+  const projectsList = document.querySelector("#projects");
 
   for (const project of projects) {
-    projectsGrid.insertAdjacentHTML(
+    projectsList.insertAdjacentHTML(
       "beforeend",
       /*html*/ `
-    <article class="grid-item">
+    <article class="list-item" id="${project.acf.id}">
       <img src="${project.acf.image}" alt="${project.acf.name}" />
       <h2>${project.acf.name}</h2>
-      <p>${project.acf.title}</p>
-      <a href="${project.acf.link}">See the project</a> 
+      <p class="bold">${project.acf.type}</p>
+      <p class="bold">Duration: ${project.acf.duration}</p>
+      <p>${project.acf.short}</p>
+      <div id="button">
+      <button class="button"><a href="${project.acf.link}">See the project</a></button> 
+      </div>
     </article>
   `
     );
